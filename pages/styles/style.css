@@ -1,0 +1,16 @@
+h1 {
+    color: blue;
+}
+#server_status {
+    font-weight: bold;
+}
+.online{
+    color: green;
+}
+.offline{
+    color: red;
+}
+.ico{
+    width: 25px;
+    height: 50px;
+}

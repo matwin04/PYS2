@@ -1,0 +1,4 @@
+server:
+  name: ps2smb
+  db_dir: '/test_location/'
+  db_file: 'test.db'
