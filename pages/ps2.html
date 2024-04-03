@@ -1,24 +1,29 @@
 <!DOCTYPE html>
 <head>
     <title>Game Browser</title>
-    <link rel="stylesheet" href="/pages/styles/style2.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
-    <table>
-        <th><a href="/">Home</a></th>
-        <th><a href="/games">Game Browser</a></th>
-    </table>
-    <table id="gamebrowser">
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1>PS2 Library</h1>
+          <p>This list will show all of your PS2 games</p>
+        </div>
+      </div>
+    <table class="table">
         <th>ID</th>
         <th>NAME</th>
-        <th>Platform</th>
         <th>Region</th>
+        <th>Platform</th>
         <th>Year</th>
         %for row in rows:
         <tr>
             <td>{{row[0]}}</td>
             <td>{{row[1]}}</td>
-            <td>{{row[2]}}</td>
+            <td><span class="badge badge-primary">{{row[2]}}</span></td>
+            <td>{{row[3]}}</td>
+            <td>Year</td>
         </tr>
         %end
     </table>

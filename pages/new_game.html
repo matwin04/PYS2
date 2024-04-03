@@ -1,8 +1,16 @@
 <!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
 <form action="/games/new">
+    <div class="form-group">
+        <label for="name">Game Title</label>
+        <input type="name" class="form-control" id="name">
+    </div>
     <label for="name">NAME:</label>
     <input type="text" name="name" id="name"><br>
 
 
-    <input type="submit" value="add">
+    <input type="submit" class="btn btn-primary" value="Add">
+    <input type="button" class="btn btn-danger" value="Clear">
 </form>
